@@ -1,0 +1,48 @@
+@CHARSET "EUC-KR";
+
+.sb-box{
+	border-bottom:1px solid #ececec;
+	
+}
+
+.sb-wrap{
+	margin:30px 0px;
+	border:2px solid #3F51B5;
+	border-radius:0px;
+	/*height:50px;*/
+}
+
+.sb-wrap input{
+	width:100%;
+	height:50px;
+	border:0px;
+	padding:6px 12px;
+	font-size:14px;
+	
+}
+
+.btn-sb{
+	background-color:#3F51B5;
+	color:#FFFFFF;
+	height:50px;
+	font-size:20px;
+	border-radius:0px;
+}
+
+.book-li li{
+	overflow:hidden;
+	border-botton:1px solid #ececec;
+}
+
+.book-li li dl dt{
+	width:100%;
+	overflow:hidden;
+}
+
+.info{
+	width:70%;
+}
+
+.sum{
+	width:30%;
+}
