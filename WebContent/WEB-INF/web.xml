@@ -11,4 +11,12 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>  
+	<servlet>
+	  	<servlet-name>ControllerAction</servlet-name>
+		<servlet-class>com.libinfosys.controller.ControllerAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControllerAction</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
 </web-app>  
