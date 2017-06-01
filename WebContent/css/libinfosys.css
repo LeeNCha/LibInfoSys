@@ -31,12 +31,22 @@
 
 .book-li li{
 	overflow:hidden;
-	border-botton:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+	padding:10px;
+}
+
+.book-li li dl{
+	width:90%;
 }
 
 .book-li li dl dt{
 	width:100%;
 	overflow:hidden;
+}
+
+.bl-no{
+	margin-right:10px;
+	font-weight:bold;
 }
 
 .info{
@@ -45,4 +55,9 @@
 
 .sum{
 	width:30%;
+}
+
+
+.pg-nav{
+	width:250px;
 }

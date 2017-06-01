@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"  pageEncoding="EUC-KR"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -25,21 +26,51 @@
 	<div class="container">
 		
 		<div class="row">
+			<!-- 정렬방식 선택하는 부분 -->
+			<div>
+				
+			</div>
+			
+			<!-- 리스트 -->
 			<ul class="book-li clearfix">
-				<c:forEach items="${bookList}" var="book">
-					<li>
-						<dl>
-							<dt class="pull-left">${book.book_name}</dt>
-							<dd class="pull-left info">
-								<div>${book.book_author}</div>
-								<div>${book.book_isbn}</div>
-								<div>${book.book_quantity}</div>
-							</dd>
-							<dd class="pull-left sum">책소개</dd>
-						</dl>
-					</li>
-				</c:forEach>
+			<c:forEach items="${bookList}" var="book">
+				<li>
+					<div class="pull-left bl-no">1</div>
+					<dl class="pull-left clearfix">
+						<dt class="pull-left">${book.book_name}</dt>
+						<dd class="pull-left info">
+							<div>${book.book_author}</div>
+							<div>${book.book_isbn}</div>
+							<div>${book.book_quantity}</div>
+						</dd>
+						<dd class="pull-left sum">책소개</dd>
+					</dl>
+				</li>
+			</c:forEach>
+				
 			</ul>
+		</div>
+		<!-- pagination -->
+		<div>
+			<nav class="center-block pg-nav">
+				<ul class="pagination">
+			    	<li class="disabled">
+						<a href="#" aria-label="Previous">
+						  <span aria-hidden="true">&laquo;</span>
+						</a>
+			    	</li>
+				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+			    	<li>
+						<a href="#" aria-label="Next">
+						  <span aria-hidden="true">&raquo;</span>
+						</a>
+			    	</li>
+			  	</ul>
+			</nav>
 		</div>
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->	
