@@ -21,7 +21,7 @@ public class LibinfosysDao extends CommonDao{
     	
     	ArrayList<Book> bookList=null;
 
-        bookList=(ArrayList<Book>)GetDB().queryForList("getBookList",null,page,10);
+        bookList=(ArrayList<Book>)GetDB().queryForList("getBookList",null,(page-1)*10,10);
         
         return bookList;
     }

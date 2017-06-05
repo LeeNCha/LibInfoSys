@@ -35,7 +35,7 @@
 			<ul class="book-li clearfix">
 			<c:forEach items="${bookList}" var="book">
 				<li>
-					<div class="pull-left bl-no">1</div>
+					<div class="pull-left bl-no">${book.book_no}</div>
 					<dl class="pull-left clearfix">
 						<dt class="pull-left">${book.book_name}</dt>
 						<dd class="pull-left info">
@@ -59,7 +59,7 @@
 						  <span aria-hidden="true">&laquo;</span>
 						</a>
 			    	</li>
-				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">1</a></li>
 				    <li><a href="#">2</a></li>
 				    <li><a href="#">3</a></li>
 				    <li><a href="#">4</a></li>

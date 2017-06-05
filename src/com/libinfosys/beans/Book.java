@@ -5,7 +5,7 @@ public class Book {
 	private String book_name;
 	private String book_author;
 	private String book_publisher;
-	private int book_isbn;
+	private String book_isbn;
 	private int book_quantity;
 	
 	
@@ -33,10 +33,10 @@ public class Book {
 	public void setBook_publisher(String book_publisher) {
 		this.book_publisher = book_publisher;
 	}
-	public int getBook_isbn() {
+	public String getBook_isbn() {
 		return book_isbn;
 	}
-	public void setBook_isbn(int book_ISBN) {
+	public void setBook_isbn(String book_ISBN) {
 		this.book_isbn = book_ISBN;
 	}
 	public int getBook_quantity() {
