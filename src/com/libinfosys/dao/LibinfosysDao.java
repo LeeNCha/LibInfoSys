@@ -25,5 +25,14 @@ public class LibinfosysDao extends CommonDao{
         
         return bookList;
     }
+	
+	public int getBooksTotal() throws SQLException{
+		
+		int total = 0;
+		
+		total=(int) GetDB().queryForObject("getBookTotal",null);
+		
+		return total;
+	}
     
 }

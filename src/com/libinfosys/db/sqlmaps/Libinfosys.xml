@@ -11,5 +11,7 @@
 	<select id="getBookList"  resultClass="book">
 	     select * from Book order by book_no
 	</select>
-   
+   <select id="getBookTotal" resultClass="int">
+   		select count(*) from Book
+   </select>
 </sqlMap>

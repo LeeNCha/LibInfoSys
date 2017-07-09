@@ -22,9 +22,11 @@ public class ListAction implements CommandAction{
         }// 해당 파라미터를 int형으로 캐스팅후 변수에 대입합니다.
 	
 		/*DB query*/
-		ArrayList<Book> bookList = LibinfosysDao.getInstance().getBookList(page);  
+		ArrayList<Book> bookList = LibinfosysDao.getInstance().getBookList(page);
+		int booksTotal=LibinfosysDao.getInstance().getBooksTotal();
         request.setAttribute("bookList", bookList);   // 셋팅된 리스트를 뷰에 포워드합니다.
         request.setAttribute("page", page); // 페이지번호를 뷰에서 보기위해 표시합니다.
+        request.setAttribute("tot", booksTotal);
 
 		return "list.jsp";
 	}

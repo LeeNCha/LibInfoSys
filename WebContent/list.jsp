@@ -24,7 +24,6 @@
 		</div>
 	</div>
 	<div class="container">
-		
 		<div class="row">
 			<!-- 정렬방식 선택하는 부분 -->
 			<div>
@@ -51,27 +50,11 @@
 			</ul>
 		</div>
 		<!-- pagination -->
-		<div>
-			<nav class="center-block pg-nav">
-				<ul class="pagination">
-			    	<li class="disabled">
-						<a href="#" aria-label="Previous">
-						  <span aria-hidden="true">&laquo;</span>
-						</a>
-			    	</li>
-				    <li><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">4</a></li>
-				    <li><a href="#">5</a></li>
-			    	<li>
-						<a href="#" aria-label="Next">
-						  <span aria-hidden="true">&raquo;</span>
-						</a>
-			    	</li>
-			  	</ul>
-			</nav>
-		</div>
+		<jsp:include page="page.jsp" flush="false">
+			<jsp:param value="${page}" name="page" />
+			<jsp:param value="${tot}" name="totnum"/>
+		</jsp:include>
+		
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->	
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
